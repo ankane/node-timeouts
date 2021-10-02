@@ -13,8 +13,8 @@ Here’s how to add timeouts for popular Node packages. **[All have been tested]
 - [http](#http)
 - [pg](#pg)
 - [redis](#redis)
-- [@elastic/elasticsearch](#elastic-elasticsearch)
-- [@opensearch-project/opensearch](#opensearch-project-opensearch)
+- [@elastic/elasticsearch](#elasticelasticsearch)
+- [@opensearch-project/opensearch](#opensearch-projectopensearch)
 
 ### axios
 
