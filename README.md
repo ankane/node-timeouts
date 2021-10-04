@@ -8,22 +8,21 @@ Here’s how to add timeouts for popular Node packages. **[All have been tested]
 
 ## Packages
 
-- [axios](#axios)
+Standard library
+
 - [child_process](#child_process)
 - [http](#http)
+- [net](#net)
+
+NPM
+
+- [axios](#axios)
 - [pg](#pg)
 - [redis](#redis)
 - [@elastic/elasticsearch](#elasticelasticsearch)
 - [@opensearch-project/opensearch](#opensearch-projectopensearch)
 
-### axios
-
-```javascript
-axios.get(url, {timeout: 1000});
-// or
-const instance = axios.create();
-instance.defaults.timeout = 1000;
-```
+## Standard Library
 
 ### child_process
 
@@ -35,6 +34,24 @@ exec(cmd, {timeout: 1000});
 
 ```javascript
 http.request(url, {timeout: 1000});
+```
+
+### net
+
+```javascript
+const socket = new net.Socket();
+socket.setTimeout(1000);
+```
+
+## NPM
+
+### axios
+
+```javascript
+axios.get(url, {timeout: 1000});
+// or
+const instance = axios.create();
+instance.defaults.timeout = 1000;
 ```
 
 ### pg
