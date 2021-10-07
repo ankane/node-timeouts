@@ -18,6 +18,7 @@ Standard library
 NPM
 
 - [axios](#axios)
+- [mysql](#mysql)
 - [pg](#pg)
 - [redis](#redis)
 - [@elastic/elasticsearch](#elasticelasticsearch)
@@ -60,6 +61,16 @@ axios.get(url, {timeout: 1000});
 const instance = axios.create();
 instance.defaults.timeout = 1000;
 ```
+
+### mysql
+
+```javascript
+const connection = mysql.createConnection({
+  connectTimeout: 1000
+});
+```
+
+Default: 10s connect timeout
 
 ### pg
 

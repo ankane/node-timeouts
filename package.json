@@ -11,6 +11,7 @@
     "@opensearch-project/opensearch": "github:opensearch-project/opensearch-js",
     "axios": "^0.22.0",
     "jest": "^27.0.4",
+    "mysql": "^2.18.1",
     "pg": "^8.6.0",
     "redis": "^3.1.2"
   }
