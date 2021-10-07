@@ -18,6 +18,7 @@ Standard library
 NPM
 
 - [axios](#axios)
+- [cassandra-driver](#cassandra-driver)
 - [mongodb](#mongodb)
 - [mysql](#mysql)
 - [pg](#pg)
@@ -61,6 +62,17 @@ axios.get(url, {timeout: 1000});
 // or
 const instance = axios.create();
 instance.defaults.timeout = 1000;
+```
+
+### cassandra-driver
+
+```javascript
+const client = new cassandra.Client({
+  socketOptions: {
+    connectTimeout: 1000,
+    readTimeout: 1000
+  }
+});
 ```
 
 ### mongodb
