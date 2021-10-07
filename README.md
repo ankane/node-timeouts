@@ -18,6 +18,7 @@ Standard library
 NPM
 
 - [axios](#axios)
+- [mongodb](#mongodb)
 - [mysql](#mysql)
 - [pg](#pg)
 - [redis](#redis)
@@ -60,6 +61,16 @@ axios.get(url, {timeout: 1000});
 // or
 const instance = axios.create();
 instance.defaults.timeout = 1000;
+```
+
+### mongodb
+
+```javascript
+const client = new MongoClient(uri, {
+  connectTimeoutMS: 1000,
+  socketTimeoutMS: 1000,
+  serverSelectionTimeoutMS: 1000
+});
 ```
 
 ### mysql
