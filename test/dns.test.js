@@ -9,7 +9,7 @@ test('connect', () => {
   return resolver.resolve4('example.com').catch(e => expect(e.message).toMatch('ETIMEOUT'));
 });
 
-// uses UPD
+// uses UDP
 test.skip('read', () => {
   expect.assertions(1);
 
