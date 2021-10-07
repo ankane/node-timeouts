@@ -10,10 +10,10 @@ test('connect', () => {
 });
 
 // uses UDP
-test.skip('read', () => {
+test('read', () => {
   expect.assertions(1);
 
   const resolver = new dns.Resolver({timeout: 1000, tries: 1});
-  resolver.setServers([helper.read_host_and_port()]);
+  resolver.setServers([helper.read_host() + ':4568']);
   return resolver.resolve4('example.com').catch(e => expect(e.message).toMatch('ETIMEOUT'));
 });
