@@ -4,7 +4,7 @@ const http = require('http');
 test('connect', done => {
   expect.assertions(1);
 
-  const req = http.get(helper.connect_url(), {timeout: 1000});
+  const req = http.get(helper.connectUrl(), {timeout: 1000});
   req.on('timeout', () => req.destroy());
 
   req.on('error', (err) => {
@@ -18,7 +18,7 @@ test('connect', done => {
 test('read', done => {
   expect.assertions(1);
 
-  const req = http.get(helper.read_url(), {timeout: 1000});
+  const req = http.get(helper.readUrl(), {timeout: 1000});
   req.on('timeout', () => req.destroy());
 
   req.on('error', (err) => {

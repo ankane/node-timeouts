@@ -5,7 +5,7 @@ test('connect', done => {
   expect.assertions(1);
 
   const connection = mysql.createConnection({
-    host: helper.connect_host(),
+    host: helper.connectHost(),
     connectTimeout: 1000
   });
 
@@ -21,8 +21,8 @@ test.skip('read', done => {
   expect.assertions(1);
 
   const connection = mysql.createConnection({
-    host: helper.read_host(),
-    port: helper.read_port()
+    host: helper.readHost(),
+    port: helper.readPort()
   });
 
   connection.query({sql: 'SELECT 1', timeout: 1000}, function (e, results, fields) {

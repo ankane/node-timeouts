@@ -5,7 +5,7 @@ test('connect', () => {
   expect.assertions(1);
 
   const resolver = new dns.Resolver({timeout: 1000, tries: 1});
-  resolver.setServers([helper.connect_host()]);
+  resolver.setServers([helper.connectHost()]);
   return resolver.resolve4('example.com').catch(e => expect(e.message).toMatch('ETIMEOUT'));
 });
 
@@ -14,6 +14,6 @@ test('read', () => {
   expect.assertions(1);
 
   const resolver = new dns.Resolver({timeout: 1000, tries: 1});
-  resolver.setServers([helper.read_host() + ':4568']);
+  resolver.setServers([helper.readHost() + ':4568']);
   return resolver.resolve4('example.com').catch(e => expect(e.message).toMatch('ETIMEOUT'));
 });

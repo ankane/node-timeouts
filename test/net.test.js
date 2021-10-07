@@ -11,7 +11,7 @@ test('connect', done => {
     expect(true).toBeTruthy();
     done();
   });
-  socket.connect(80, helper.connect_host());
+  socket.connect(80, helper.connectHost());
 });
 
 test('read', done => {
@@ -24,5 +24,5 @@ test('read', done => {
     expect(true).toBeTruthy();
     done();
   });
-  socket.connect(helper.read_port(), helper.read_host());
+  socket.connect(helper.readPort(), helper.readHost());
 });
