@@ -11,6 +11,7 @@ Here’s how to add timeouts for popular Node packages. **[All have been tested]
 Standard library
 
 - [child_process](#child_process)
+- [dns](#dns)
 - [http](#http)
 - [net](#net)
 
@@ -28,6 +29,12 @@ NPM
 
 ```javascript
 exec(cmd, {timeout: 1000});
+```
+
+### dns
+
+```javascript
+new dns.Resolver({timeout: 1000});
 ```
 
 ### http
