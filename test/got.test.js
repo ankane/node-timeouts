@@ -1,4 +1,6 @@
 const helper = require('./helper');
+// got 12+ does not support CommonJS
+// https://github.com/sindresorhus/got/issues/1789
 const got = require('got');
 
 test('connect', async () => {
