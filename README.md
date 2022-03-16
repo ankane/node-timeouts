@@ -19,6 +19,7 @@ NPM
 
 - [axios](#axios)
 - [cassandra-driver](#cassandra-driver)
+- [got](#got)
 - [mongodb](#mongodb)
 - [mysql](#mysql)
 - [pg](#pg)
@@ -73,6 +74,12 @@ const client = new cassandra.Client({
     readTimeout: 1000
   }
 });
+```
+
+### got
+
+```javascript
+await got(url, {timeout: 1000});
 ```
 
 ### mongodb

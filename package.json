@@ -11,6 +11,7 @@
     "@opensearch-project/opensearch": "github:opensearch-project/opensearch-js",
     "axios": "^0.22.0",
     "cassandra-driver": "^4.6.3",
+    "got": "^11.8.3",
     "jest": "^27.0.4",
     "mongodb": "^4.1.3",
     "mysql": "^2.18.1",
