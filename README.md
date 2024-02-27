@@ -6,7 +6,7 @@ Here’s how to add timeouts for popular Node packages. **[All have been tested]
 
 Also available for [Ruby](https://github.com/ankane/the-ultimate-guide-to-ruby-timeouts), [Python](https://github.com/ankane/python-timeouts), [Go](https://github.com/ankane/go-timeouts), and [Rust](https://github.com/ankane/rust-timeouts)
 
-[![Build Status](https://github.com/ankane/node-timeouts/workflows/build/badge.svg?branch=master)](https://github.com/ankane/node-timeouts/actions)
+[![Build Status](https://github.com/ankane/node-timeouts/actions/workflows/build.yml/badge.svg)](https://github.com/ankane/node-timeouts/actions)
 
 ## Packages
 
