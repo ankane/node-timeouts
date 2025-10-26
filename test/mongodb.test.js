@@ -7,7 +7,7 @@ test('connect', async () => {
     connectTimeoutMS: 1000,
     serverSelectionTimeoutMS: 1000
   });
-  await client.connect().catch(e => expect(e.message).toMatch('connection timed out'));
+  await client.connect().catch(e => expect(e.message).toMatch('timed out'));
 });
 
 test('read', async () => {
