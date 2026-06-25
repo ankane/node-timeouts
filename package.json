@@ -1,11 +1,4 @@
 {
-  "scripts": {
-    "test": "jest"
-  },
-  "jest": {
-    "globalSetup": "./test/setup.js",
-    "globalTeardown": "./test/teardown.js"
-  },
   "devDependencies": {
     "@elastic/elasticsearch": "^7.15.0",
     "@opensearch-project/opensearch": "github:opensearch-project/opensearch-js",
@@ -17,5 +10,12 @@
     "mysql": "^2.18.1",
     "pg": "^8.6.0",
     "redis": "^3.1.2"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "jest": {
+    "globalSetup": "./test/setup.js",
+    "globalTeardown": "./test/teardown.js"
   }
 }
